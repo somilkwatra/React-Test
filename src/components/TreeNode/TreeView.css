@@ -1,0 +1,81 @@
+/* Root container */
+.tree-node {
+  position: relative;
+  margin-left: 32px;
+  padding: 8px 0 8px 24px;
+}
+
+/* Vertical dotted line */
+.tree-node::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 1px;
+  height: 100%;
+  border-left: 1px dashed #cfcfcf;
+}
+
+/* Node row */
+.tree-node-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Circle avatar (A, B, C...) */
+.node-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #6cc04a;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* First level blue */
+.root-node .node-avatar {
+  background: #4da3ff;
+}
+
+/* Node label card */
+.node-label {
+  background: #fff;
+  border-radius: 6px;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  font-size: 14px;
+}
+
+/* Expand icon */
+.expand-btn {
+  cursor: pointer;
+  font-weight: bold;
+  color: #666;
+}
+
+/* Action buttons */
+.node-actions button {
+  background: #f3f3f3;
+  border: none;
+  border-radius: 4px;
+  padding: 2px 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.node-actions button:hover {
+  background: #e0e0e0;
+}
+
+/* Children spacing */
+.tree-children {
+  margin-left: 28px;
+}
