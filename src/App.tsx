@@ -1,19 +1,17 @@
 import TreeView from "./components/TreeNode/TreeView";
+import KanbanBoard from "./components/Kanban/KanbanBoard";
 import { initialTreeData } from "./data/treeData";
-import "./styles/global.css";
-import { useNavigate } from "react-router-dom";
 
 function App() {
-  const navigate = useNavigate();
-
   return (
-    <div className="app-container">
-      <h2>Tree View Component</h2>
+    <div>
+      <h2>Question 1 – Tree View</h2>
       <TreeView data={initialTreeData} />
 
-      <button className="btn-blue" onClick={() => navigate("/todolist")}>
-        Go to Todo List
-      </button>
+      <hr />
+
+      <h2>Question 2 – Kanban Board</h2>
+      <KanbanBoard />
     </div>
   );
 }

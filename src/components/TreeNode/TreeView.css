@@ -79,3 +79,63 @@
 .tree-children {
   margin-left: 28px;
 }
+
+.tree-node {
+  position: relative;
+  margin-left: 20px;
+  padding: 6px 0;
+}
+
+.tree-node::before {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 0;
+  height: 100%;
+  border-left: 1px dashed #d0d0d0;
+}
+
+.tree-node-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.node-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #6cc04a;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.node-label {
+  background: #fff;
+  border-radius: 8px;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.expand-btn {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.node-actions button {
+  background: #f3f3f3;
+  border: none;
+  border-radius: 4px;
+  padding: 2px 6px;
+  cursor: pointer;
+}
+
+.tree-children {
+  margin-left: 34px;
+}
